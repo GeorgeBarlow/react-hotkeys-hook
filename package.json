@@ -2,10 +2,10 @@
   "name": "react-hotkeys-hook",
   "description": "React hook for handling keyboard shortcuts",
   "version": "5.1.0",
-  "private": true,
+  "private": false,
   "repository": {
     "type": "git",
-    "url": "https://github.com/JohannesKlauss/react-keymap-hook.git"
+    "url": "https://github.com/GeorgeBarlow/react-keymap-hook.git"
   },
   "homepage": "https://johannesklauss.github.io/react-hotkeys-hook/",
   "author": "Johannes Klauss",
@@ -34,7 +34,8 @@
     "test": "npm run -w packages/react-hotkeys-hook test",
     "prepublishOnly": "npm run test && npm run lint && npm run build",
     "format": "npx @biomejs/biome format --write packages",
-    "lint": "npx @biomejs/biome lint --write packages"
+    "lint": "npx @biomejs/biome lint --write packages",
+    "prepare": "npm install && npm run build"
   },
   "workspaces": [
     "packages/*"
